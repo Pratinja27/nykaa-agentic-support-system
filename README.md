@@ -18,3 +18,18 @@
   - Home: ₹399 – ₹5,999
 - **Price Range Reasoning:** Price ranges reflect realistic Nykaa e-commerce catalog pricing, ranging from budget beauty essentials (₹199) to premium beauty electronics (₹24,999).
 - **Delayed Shipment Target:** 10% – 30% (Validated dynamically by generator).
+
+### Knowledge Base Documents
+Contains 12 policy documents covering mandatory e-commerce topics:
+1. Return window by product category
+2. COD refund timelines
+3. Delivery SLAs
+4. Reverse-pickup eligibility
+5. Warranty terms by category
+6. Order-cancellation policy
+7. Loyalty-points redemption policy
+8. Payment-failure/retry policy
+9. Size-exchange policy
+10. Damaged-item claim process
+11. International shipping restrictions
+12. Customer-support escalation matrix
