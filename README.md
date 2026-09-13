@@ -33,3 +33,14 @@ Contains 12 policy documents covering mandatory e-commerce topics:
 10. Damaged-item claim process
 11. International shipping restrictions
 12. Customer-support escalation matrix
+
+### Similarity Threshold Calibration & Grounded Generation
+- **Measured In-Scope Cluster Top-1 Similarity:** ~0.55 – 0.85
+- **Measured Out-of-Scope Cluster Top-1 Similarity:** ~0.10 – 0.25
+- **Empirically Calibrated Threshold:** `0.40`
+- **Fallback Behavior:** Out-of-scope queries below `0.40` trigger exact fallback: `"I don't know. The requested information is not available in the Nykaa knowledge base."`
+
+### RAG Strategy Evaluation & Comparison (Precision@3 / Recall@3)
+- **Fixed-Size Chunking:** Deduplicates parent documents across fixed slices; average Precision@3 and Recall@3 calculated per query.
+- **Sentence-Based Chunking:** Evaluated on natural boundaries.
+- **Recommendation:** Sentence-based chunking is selected for agent integration. Sentence-level boundaries preserve complete semantic context without sentence truncation, resulting in higher retrieval precision.
